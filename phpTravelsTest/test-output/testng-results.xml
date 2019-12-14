@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2019-12-14T00:30:29 CET" name="Default suite" finished-at="2019-12-14T00:31:49 CET" duration-ms="79445">
+    <groups>
+    </groups>
+    <test started-at="2019-12-14T00:30:29 CET" name="Default test" finished-at="2019-12-14T00:31:49 CET" duration-ms="79445">
+      <class name="phpTravelsTests.TravelsCarsExtrasTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:phpTravelsTests.TravelsCarsExtrasTest@2a266d09]" started-at="2019-12-14T00:30:29 CET" name="setup" finished-at="2019-12-14T00:30:33 CET" duration-ms="4131" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="cars()[pri:5, instance:phpTravelsTests.TravelsCarsExtrasTest@2a266d09]" started-at="2019-12-14T00:30:34 CET" name="cars" finished-at="2019-12-14T00:31:23 CET" duration-ms="49784" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cars -->
+        <test-method signature="findCarName()[pri:10, instance:phpTravelsTests.TravelsCarsExtrasTest@2a266d09]" started-at="2019-12-14T00:31:23 CET" name="findCarName" finished-at="2019-12-14T00:31:26 CET" duration-ms="2864" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findCarName -->
+        <test-method signature="inputStringInPriceFieldTest()[pri:15, instance:phpTravelsTests.TravelsCarsExtrasTest@2a266d09]" started-at="2019-12-14T00:31:26 CET" name="inputStringInPriceFieldTest" finished-at="2019-12-14T00:31:49 CET" duration-ms="22337" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- inputStringInPriceFieldTest -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:phpTravelsTests.TravelsCarsExtrasTest@2a266d09]" started-at="2019-12-14T00:31:49 CET" name="quit" finished-at="2019-12-14T00:31:49 CET" duration-ms="251" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- phpTravelsTests.TravelsCarsExtrasTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
