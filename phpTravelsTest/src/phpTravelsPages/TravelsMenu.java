@@ -21,46 +21,6 @@ public class TravelsMenu extends BasicPage {
 		super(driver);
 	}
 	
-	public By getDashboard() {
-		return dashboard;
-	}
-
-	public By getUpdates() {
-		return updates;
-	}
-
-	public By getModules() {
-		return modules;
-	}
-
-	public By getTours() {
-		return tours;
-	}
-
-	public By getCars() {
-		return cars;
-	}
-
-	public By getCarsInCars() {
-		return carsInCars;
-	}
-
-	public By getAddNewInTours() {
-		return addNewInTours;
-	}
-
-	public By getCoupons() {
-		return coupons;
-	}
-
-	public By getNewsletter() {
-		return newsletter;
-	}
-
-	public By getBookings() {
-		return bookings;
-	}
-	
 	public WebElement Dashboard() {
 		return this.driver.findElement(dashboard);
 	}

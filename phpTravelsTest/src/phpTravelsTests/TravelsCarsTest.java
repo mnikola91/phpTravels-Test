@@ -9,12 +9,14 @@ import phpTravelsPages.TravelsMenu;
 
 public class TravelsCarsTest extends BasicTest{
 
+	TravelsCars TC = new TravelsCars(driver);
+	TravelsMenu TM = new TravelsMenu(driver);
+
 	@BeforeTest
 	public void getHomepage() throws InterruptedException {
 		BasicTest BT = new BasicTest();
 		BT.loginPhpTravels();
 		
-		TravelsMenu TM = new TravelsMenu(driver);
 		TM.Cars().click();
 		Thread.sleep(1500);
 		TM.CarsInCars().click();
@@ -23,7 +25,6 @@ public class TravelsCarsTest extends BasicTest{
 	
 	@Test(priority = 5)
 	public void testNumberOfCarModels() {
-		TravelsCars TC = new TravelsCars(driver);
 		TC.checkTableSize();
 
 		Assert.assertEquals(TC.checkTableSize(), 10);
@@ -31,23 +32,20 @@ public class TravelsCarsTest extends BasicTest{
 	
 	@Test (priority = 10)
 	public void testNumberOfOrders() {
-		TravelsCars TC = new TravelsCars(driver);
 		Assert.assertTrue(TC.isMoreThen50());
 	}
 	
 	@Test (priority = 15)
 	public void uploadPhoto() throws InterruptedException {
-		TravelsCars TC = new TravelsCars(driver);
 		String textBeforeUploadPhoto = TC.checkUploadText();
 
 		TC.clickOnUpload();
 		Thread.sleep(1000);
 		TC.addButton().click();
 		Thread.sleep(1000);
-		TC.uploadPhoto("E:\\My stuffs\\IT Boot camp (QA)\\NikolaJava\\phpTravelsTest\\joker.jpg");
+		TC.uploadPhoto("photo\\joker.jpg");
 		Thread.sleep(5000);
 		
-		TravelsMenu TM = new TravelsMenu(driver);
 		TM.Cars().click();
 		Thread.sleep(500);
 		TM.CarsInCars().click();

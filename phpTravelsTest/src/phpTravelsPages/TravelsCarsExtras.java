@@ -10,67 +10,19 @@ import org.openqa.selenium.support.ui.Select;
 
 public class TravelsCarsExtras extends BasicPage {
 	
-	private By cars = By.cssSelector("#social-sidebar-menu > li:nth-child(10) > a");	
+	private By cars = By.cssSelector("#social-sidebar-menu li:nth-child(10)");
 	private By carsExtras = By.cssSelector("#Cars > li:nth-child(2)");
 	private By extrasAdd = By.cssSelector(".btn.btn-success.xcrud-action");
 	private By saveAndReturn = By.cssSelector("[data-task='save']");
 	private By addImage = By.name("xcrud-attach");
 	private By nameCars = By.name("cHRfZXh0cmFzLmV4dHJhc190aXRsZQ--");
-	private By status = By.name("cHRfZXh0cmFzLmV4dHJhc19zdGF0dXM-"); // ovo preko select jer je drop down lista
+	private By status = By.name("cHRfZXh0cmFzLmV4dHJhc19zdGF0dXM-");
 	private By price = By.name("cHRfZXh0cmFzLmV4dHJhc19iYXNpY19wcmljZQ--");
 	private By uploadPhotoCheck = By.cssSelector("tr.xcrud-row td:nth-child(3)");
 	private By tableRows = By.cssSelector("div.xcrud-list-container > table > tbody > tr");
 	
 	public TravelsCarsExtras(WebDriver driver) {
 		super(driver);
-	}
-
-	public By getCars() {
-		return cars;
-	}
-	
-	public By getAddImage() {
-		return addImage;
-	}
-
-	public void setAddImage(By addImage) {
-		this.addImage = addImage;
-	}
-
-	public By getNameCars() {
-		return nameCars;
-	}
-
-	public void setNameCars(By nameCars) {
-		this.nameCars = nameCars;
-	}
-
-	public By getStatus() {
-		return status;
-	}
-
-	public void setStatus(By status) {
-		this.status = status;
-	}
-
-	public By getPrice() {
-		return price;
-	}
-
-	public void setPrice(By price) {
-		this.price = price;
-	}
-
-	public By getCarsExtras() {
-		return carsExtras;
-	}
-
-	public By getExtrasAdd() {
-		return extrasAdd;
-	}
-
-	public By getSaveAndReturn() {
-		return saveAndReturn;
 	}
 	
 	public WebElement Cars() {

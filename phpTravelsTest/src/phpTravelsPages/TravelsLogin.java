@@ -15,26 +15,6 @@ public class TravelsLogin extends BasicPage {
 	public TravelsLogin(WebDriver driver) {
 		super(driver);
 	}
-	
-	public By getInputEmail() {
-		return inputEmail;
-	}
-
-	public By getInputPassword() {
-		return inputPassword;
-	}
-
-	public By getRememberMe() {
-		return rememberMe;
-	}
-
-	public By getForgotPassword() {
-		return forgotPassword;
-	}
-
-	public By getLoginButton() {
-		return loginButton;
-	}
 
 	public void goToHomepage(String homepage) throws InterruptedException {
 		this.driver.get(homepage);

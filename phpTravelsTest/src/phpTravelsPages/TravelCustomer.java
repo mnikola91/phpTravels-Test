@@ -20,7 +20,7 @@ public class TravelCustomer extends BasicPage {
 	private By country = By.cssSelector("div#s2id_autogen1");
 	private By typeCountry = By.cssSelector(".select2-search input");
 	private By address = By.name("address1");
-	private By status = By.name("status"); //ovo je select
+	private By status = By.name("status");
 	private By emailSubscriber = By.name("newssub");
 	private By submitButton = By.cssSelector(".panel-footer button");
 	

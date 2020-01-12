@@ -7,21 +7,23 @@ import phpTravelsPages.TravelsCarsExtras;
 
 public class TravelsCarsExtrasTest extends BasicTest {
 	
+	TravelsCarsExtras TCE = new TravelsCarsExtras(driver);
+	
 	@Test(priority = 5)
 	public void cars() throws InterruptedException {
 		BasicTest BT = new BasicTest();
 		BT.loginPhpTravels();
+		Thread.sleep(2000);
 		
-		TravelsCarsExtras TCE = new TravelsCarsExtras(driver);
 		TCE.Cars().click();
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		TCE.CarsExtras().click();
 		Thread.sleep(4000);
 		TCE.ExtrasAdd().click();
 		Thread.sleep(4000);
 		TCE.NameCars().sendKeys("Yugo car");
 		Thread.sleep(1500);
-		TCE.uploadImage("E:\\My stuffs\\IT Boot camp (QA)\\NikolaJava\\phpTravelsTest\\joker.jpg");
+		TCE.uploadImage("photo\\joker.jpg");
 		Thread.sleep(4000);
 		TCE.setStatus("No");
 		Thread.sleep(1500);
@@ -35,14 +37,11 @@ public class TravelsCarsExtrasTest extends BasicTest {
 
 	@Test(priority = 10)
 	public void findCarName() {
-		TravelsCarsExtras TCE = new TravelsCarsExtras(driver);
-
 		Assert.assertTrue(TCE.checkIfCarIsAdded("Yugo car"));
 	}
 	
 	@Test(priority = 15)
 	public void inputStringInPriceFieldTest() throws InterruptedException {
-		TravelsCarsExtras TCE = new TravelsCarsExtras(driver);
 
 		TCE.Cars().click();
 		Thread.sleep(1000);

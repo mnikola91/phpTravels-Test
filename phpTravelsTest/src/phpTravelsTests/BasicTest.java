@@ -43,6 +43,6 @@ public class BasicTest {
 		ex.closeExcell();
 
 		TL.loginButton().click();
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 	}
 }

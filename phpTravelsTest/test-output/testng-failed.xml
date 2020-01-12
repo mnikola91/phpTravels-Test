@@ -3,15 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="phpTravelsTests.TravelsCarsExtrasTest">
+      <class name="phpTravelsTests.TravelCustomerTest">
         <methods>
-          <include name="findCarName"/>
+          <include name="testCustomers"/>
           <include name="setup"/>
           <include name="quit"/>
-          <include name="inputStringInPriceFieldTest"/>
-          <include name="cars"/>
         </methods>
-      </class> <!-- phpTravelsTests.TravelsCarsExtrasTest -->
+      </class> <!-- phpTravelsTests.TravelCustomerTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

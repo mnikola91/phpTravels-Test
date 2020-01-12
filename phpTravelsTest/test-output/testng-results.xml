@@ -1,33 +1,94 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-12-14T00:30:29 CET" name="Default suite" finished-at="2019-12-14T00:31:49 CET" duration-ms="79445">
+  <suite started-at="2020-01-12T14:48:17 CET" name="Default suite" finished-at="2020-01-12T14:48:48 CET" duration-ms="30769">
     <groups>
     </groups>
-    <test started-at="2019-12-14T00:30:29 CET" name="Default test" finished-at="2019-12-14T00:31:49 CET" duration-ms="79445">
-      <class name="phpTravelsTests.TravelsCarsExtrasTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:phpTravelsTests.TravelsCarsExtrasTest@2a266d09]" started-at="2019-12-14T00:30:29 CET" name="setup" finished-at="2019-12-14T00:30:33 CET" duration-ms="4131" status="PASS">
+    <test started-at="2020-01-12T14:48:17 CET" name="Default test" finished-at="2020-01-12T14:48:48 CET" duration-ms="30769">
+      <class name="phpTravelsTests.TravelCustomerTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:phpTravelsTests.TravelCustomerTest@568ff82]" started-at="2020-01-12T14:48:17 CET" name="setup" finished-at="2020-01-12T14:48:22 CET" duration-ms="4590" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="cars()[pri:5, instance:phpTravelsTests.TravelsCarsExtrasTest@2a266d09]" started-at="2019-12-14T00:30:34 CET" name="cars" finished-at="2019-12-14T00:31:23 CET" duration-ms="49784" status="PASS">
+        <test-method signature="testCustomers()[pri:0, instance:phpTravelsTests.TravelCustomerTest@568ff82]" started-at="2020-01-12T14:48:22 CET" name="testCustomers" finished-at="2020-01-12T14:48:46 CET" duration-ms="23900" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":".xcrud-list.table.table-striped.table-hover tbody tr:nth-child(47) .xcrud-current.xcrud-actions.xcrud-fix .btn-group a"}
+  (Session info: chrome=79.0.3945.117)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'DESKTOP-0T4GVDK', ip: '192.168.1.108', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '9.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.117, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\NIKOLA~1.DES\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:3031}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 0a02ae209bc939d1bc1a81328f9e2b9f
+*** Element info: {Using=css selector, value=.xcrud-list.table.table-striped.table-hover tbody tr:nth-child(47) .xcrud-current.xcrud-actions.xcrud-fix .btn-group a}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":".xcrud-list.table.table-striped.table-hover tbody tr:nth-child(47) .xcrud-current.xcrud-actions.xcrud-fix .btn-group a"}
+  (Session info: chrome=79.0.3945.117)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'DESKTOP-0T4GVDK', ip: '192.168.1.108', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '9.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.117, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\NIKOLA~1.DES\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:3031}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 0a02ae209bc939d1bc1a81328f9e2b9f
+*** Element info: {Using=css selector, value=.xcrud-list.table.table-striped.table-hover tbody tr:nth-child(47) .xcrud-current.xcrud-actions.xcrud-fix .btn-group a}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.base/java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
+at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at phpTravelsPages.TravelCustomer.editCustomer(TravelCustomer.java:46)
+at phpTravelsTests.TravelCustomerTest.testCustomers(TravelCustomerTest.java:23)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- cars -->
-        <test-method signature="findCarName()[pri:10, instance:phpTravelsTests.TravelsCarsExtrasTest@2a266d09]" started-at="2019-12-14T00:31:23 CET" name="findCarName" finished-at="2019-12-14T00:31:26 CET" duration-ms="2864" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- findCarName -->
-        <test-method signature="inputStringInPriceFieldTest()[pri:15, instance:phpTravelsTests.TravelsCarsExtrasTest@2a266d09]" started-at="2019-12-14T00:31:26 CET" name="inputStringInPriceFieldTest" finished-at="2019-12-14T00:31:49 CET" duration-ms="22337" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- inputStringInPriceFieldTest -->
-        <test-method is-config="true" signature="quit()[pri:0, instance:phpTravelsTests.TravelsCarsExtrasTest@2a266d09]" started-at="2019-12-14T00:31:49 CET" name="quit" finished-at="2019-12-14T00:31:49 CET" duration-ms="251" status="PASS">
+        </test-method> <!-- testCustomers -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:phpTravelsTests.TravelCustomerTest@568ff82]" started-at="2020-01-12T14:48:46 CET" name="quit" finished-at="2020-01-12T14:48:48 CET" duration-ms="2177" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->
-      </class> <!-- phpTravelsTests.TravelsCarsExtrasTest -->
+      </class> <!-- phpTravelsTests.TravelCustomerTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
